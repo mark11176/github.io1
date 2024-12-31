@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Milk Tea</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Spot-Tea-Feed</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="milkteaseries.html">Milk Tea Series</a>
+                        <a href="fruitteaseries.html">Fruit Tea Series</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section id="section2"></section>
+        <section id="drop">
+            <h2>Milk Tea Series</h2>
+            <p>In a world full of choices, choose your flavor and enjoy every moment like a cup of milk tea.</p>
+            <div class="funfact-container">
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Avocado</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="avocado.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Cappuccino</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="cappuccino.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Caramel Sugar</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="caramel sugar.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Chocolate</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="chocolate.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="funfact-container">
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Cookies n' Cream</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="cookies & cream.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Dark Chocolate</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="dark chocolate.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Mango</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="mango.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Choco Kisses</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="choco kisses.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                        <!--Embedded JavaScript-->
+            <script>
+                // Logout function with confirmation
+                function confirmLogout() {
+                    // Show a confirmation message to the user
+                    const confirmLogout = confirm("Are you sure you want to log out?");
+                    // If the user confirms, proceed with logging out
+                    if (confirmLogout) {
+                        //Mark the user as logged out in localStorage (if used)
+                        localStorage.removeItem('isLoggedIn'); //Or any other keys related to log in credentials
+                        //Redirect to the log in page
+                        window.location.href = 'login.html';
+                    } else {
+                        //If the user cancels, do nothing
+                        return;
+                    }
+                }
+            </script>
+            <footer>
+                <p>&copy; 2024 Spot-Tea-Feed. All rights reserved.</p>
+            </footer>
+           <div class="footer-divider"></div> <!--Orange line-->      
+
+    </body>
+</html>

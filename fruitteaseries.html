@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Milk Tea</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Spot-Tea-Feed</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="milkteaseries.html">Milk Tea Series</a>
+                        <a href="fruitteaseries.html">Fruit Tea Series</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section id="section2"></section>
+        <section id="drop">
+            <h2>Fruit Tea Series</h2>
+            <p>The best things in life are fruity, refreshing, and perfectly brewed.</p>
+            <div class="funfact-container">
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>BlueBerry</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="blue berry.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Green Apple</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="apple.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Kiwi</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="kiwi.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Lychee</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="lynchee.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="funfact-container">
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Passion Fruit</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="passion fruit.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="funfact-card">
+                    <div class="funfact-inner">
+                        <div class="funfact-front">
+                            <p>Strawberry</p>
+                        </div>
+                        <div class="funfact-back">
+                            <img src="strawberry.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                        <!--Embedded JavaScript-->
+            <script>
+                // Logout function with confirmation
+                function confirmLogout() {
+                    // Show a confirmation message to the user
+                    const confirmLogout = confirm("Are you sure you want to log out?");
+                    // If the user confirms, proceed with logging out
+                    if (confirmLogout) {
+                        //Mark the user as logged out in localStorage (if used)
+                        localStorage.removeItem('isLoggedIn'); //Or any other keys related to log in credentials
+                        //Redirect to the log in page
+                        window.location.href = 'login.html';
+                    } else {
+                        //If the user cancels, do nothing
+                        return;
+                    }
+                }
+            </script>
+            <footer>
+                <p>&copy; 2024 Spot-Tea-Feed. All rights reserved.</p>
+            </footer>
+           <div class="footer-divider"></div> <!--Orange line-->      
+
+    </body>
+</html>
